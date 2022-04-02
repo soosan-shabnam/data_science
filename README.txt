@@ -1,0 +1,4 @@
+README
+
+
+Firstly, after analyzing the different CSV files, we decided to combine the two score reports into one dataframe and the two match training data into another dataframe. On combining we noticed that there were an equal distribution of null values and that some features such as 'onstrike_batsman' and 'offstrike_batsman' did not have any meaningful data in them. We dropped those features and any null value in both these data frames. There were some categorical data present in the match_traindata data frame which we label encoded with scikitlearn. After all of the cleaning and preprocessing was done, we trained a linear regression model and used it on the mathch2.csv file to get the predictions and check the accuracy of the resulting predictions.
